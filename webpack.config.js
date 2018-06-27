@@ -24,10 +24,17 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
+				test: /\.s?css$/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					'css-loader'
+					'css-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							outputStyle: 'expanded',
+							sourceMap: 'none'
+						}
+					}
 				]
 			}
 		]
