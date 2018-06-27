@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "css-loader": "0.28.11",
+    "mini-css-extract-plugin": "0.4.0",
     "webpack": "4.12.2",
     "webpack-cli": "3.0.8"
   }
